@@ -69,7 +69,7 @@ export function Post({
           <ul className={styles.tags}>
             {tags.map((name) => (
               <li key={name}>
-                <Link to="/posts">#{name}</Link>
+                <Link to="/">#{name}</Link>
               </li>
             ))}
           </ul>
