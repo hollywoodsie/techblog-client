@@ -68,7 +68,9 @@ export function Post({
           </h2>
           <ul className={styles.tags}>
             {tags.map((name) => (
-              <li key={name} />
+              <li key={name}>
+                <Link to="/posts">#{name}</Link>
+              </li>
             ))}
           </ul>
           {children && <div className={styles.content}>{children}</div>}
